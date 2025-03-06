@@ -1,0 +1,119 @@
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+.main-card {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.main-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background: linear-gradient(45deg, #007bff, #00bfff);
+    color: white;
+    border-radius: 15px 15px 0 0 !important;
+    padding: 1.5rem;
+}
+
+.animate-title {
+    animation: fadeInDown 1s ease;
+}
+
+.custom-input {
+    resize: none;
+    font-family: monospace;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.custom-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-action {
+    margin: 0.5rem;
+    min-width: 140px;
+    transition: all 0.3s ease;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-action:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.copy-btn {
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.copy-btn:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+.mode-switch {
+    margin-top: 1rem;
+}
+
+.btn-mode {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-mode.active {
+    background: white;
+    color: #007bff;
+}
+
+.alert {
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.alert.fade {
+    opacity: 0;
+}
+
+.alert.show {
+    opacity: 1;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .btn-action {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
